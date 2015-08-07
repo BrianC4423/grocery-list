@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <h3><a href="http://allrecipes.com/">Meal Ideas</a></h3>
+
+      <form action="/grocery_list" method="post">
+        <label for="item_added">Add Item:</label>
+        <input type="text" id="item_added" name="item_added" placeholder="Liver & Fava Bean">
+        <select>
+          <option value="produce">Produce</option>
+          <option value="dairy">Dairy</option>
+          <option value="protein">Protein</option>
+          <option value="misc">Misc</option>
+       </select>
+        <input type="submit">
+      </form>
+      <ul>
+        <% list_item.each do |item| %>
+          <li><%= item %></li>
+        <% end %>
+      </ul>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+h1 {
+  color: orange;
+  font: bold 50px serif;
+  align-self: center;
+}
+
+h3 {
+  padding: 10px 0px 0px 0px;
+
+}
+
+ul li {
+  color: red;
+}
